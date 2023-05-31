@@ -1,0 +1,9 @@
+运行命令
+
+原始命令
+rosrun dmvio_ros node calib=/PATH/TO/camera.txt settingsFile=/PATH/TO/dm-vio/configs/euroc.yaml mode=1 nogui=0 preset=1 useimu=1 quiet=1 init_requestFullResetNormalizedErrorThreshold=0.8 init_pgba_skipFirstKFs=1
+
+修改后
+rosrun dmvio_ros node calib=./src/dm-vio-ros/dm-vio/configs/euroc/camera.txt settingsFile=./src/dm-vio-ros/dm-vio/configs/euroc.yaml mode=1 nogui=0 preset=1 useimu=1 quiet=1 init_requestFullResetNormalizedErrorThreshold=0.8 init_pgba_skipFirstKFs=1
+
+rosbag play V2_01_easy.bag
